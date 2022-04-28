@@ -19,6 +19,7 @@ const screenShot = async (params, callback) => {
 
 		cb(image);
 	} catch (error) {
+		console.log(error);
 		cb(false);
 	}
 

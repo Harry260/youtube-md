@@ -40,7 +40,7 @@ app.get(["/:url/:w/:h", "/:url/:w/", "/:url"], async (request, response) => {
 		sendError();
 	}
 
-	function sendError(error) {
+	function sendError() {
 		response
 			.status(400)
 			.sendFile("./public/images/error.jpg", { root: "." });
