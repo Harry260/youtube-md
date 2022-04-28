@@ -38,9 +38,12 @@ Embeding Youtube videos to markdown is impossible. But, you can use this tool to
 You can either use the web app to generate the code or use the Web Api.
 
 <a href="https://youtube-md.vercel.app/">
+
 | Open Web Editor |
 | --------------- |
+
 </a>
+
 ##### API
 
 | `https://youtube-md.vercel.app/<video-id*>/<width>/<height>` |
