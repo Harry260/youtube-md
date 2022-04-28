@@ -1,0 +1,26 @@
+@media (max-width: 600px){
+   .preview-img{
+      width: 100%;
+      height: auto;
+      border-radius: 0 !important;
+   }
+
+   .title-heading{
+      display: none;
+   }
+
+
+}
+
+@media (max-width:400px) {
+   .input-bar-wrap{
+      bottom: 0 !important;
+      left: 0;
+   }
+
+   .input-bar{
+      width: 100%;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+   }
+}

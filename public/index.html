@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<!-- Primary Meta Tags -->
+		<title>Youtube embed for markdown - YouTube-md</title>
+		<meta name="title" content="Youtube embed for markdown -  YouTube-md" />
+		<meta
+			name="description"
+			content="Embeding Youtube videos to markdown is impossible. But there here i have a trick for you!"
+		/>
+
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://youtube-md.vercel.app/" />
+		<meta
+			property="og:title"
+			content="Youtube embed for markdown -  YouTube-md"
+		/>
+		<meta
+			property="og:description"
+			content="Embeding Youtube videos to markdown is impossible. But there here i have a trick for you!"
+		/>
+		<meta property="og:image" content="./images/preview.png" />
+
+		<!-- Twitter -->
+		<meta property="twitter:card" content="./images/preview.png" />
+		<meta property="twitter:url" content="https://youtube-md.vercel.app/" />
+		<meta
+			property="twitter:title"
+			content="Youtube embed for markdown -  YouTube-md"
+		/>
+		<meta
+			property="twitter:description"
+			content="Embeding Youtube videos to markdown is impossible. But there here i have a trick for you!"
+		/>
+		<meta property="twitter:image" content="./images/preview.png" />
+
+		<title>Youtube Markdown!</title>
+		<link
+			rel="shortcut icon"
+			href="./images/icon.png"
+			type="image/x-icon"
+		/>
+
+		<link rel="stylesheet" type="text/css" href="css/style.css" />
+	</head>
+	<body>
+		<div class="header blurness">
+			<div class="hero-icon center">
+				<img src="./images/icon.png" alt="YTMD" />
+				<h1 class="title-heading">Youtube Markdown</h1>
+			</div>
+			<div class="center">
+				<button class="download-img">Download</button>
+				<div class="gh-icon">
+					<a href="https://github.com/harry260/youtube-md#readme">
+						<img
+							src="./images/github.png"
+							title="View on github"
+							alt="View on github"
+						/>
+					</a>
+				</div>
+			</div>
+		</div>
+		<div class="app center">
+			<div class="image-view center">
+				<img class="preview-img" src="./images/lodaing.gif" />
+			</div>
+			<div class="input-bar-wrap center">
+				<div class="input-bar blurness">
+					<div class="input-wrap">
+						<input
+							type="text"
+							class="video-id-in"
+							placeholder="Video ID or url."
+						/>
+						<div class="buttons-wrap center">
+							<button class="size-btn">Size</button>
+							<button class="go-btn gen-btn">Generate</button>
+						</div>
+					</div>
+					<div class="result-wrap">
+						<span class="result-txt"></span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="size-wrap center">
+			<div class="size-inner blurness">
+				<div class="size-item">
+					<span class="pop-title">Height</span
+					><span class="sub-size">360</span><br />
+					<input
+						class="range-slider height-slider"
+						max="2000"
+						min="100"
+						type="range"
+						value="360"
+					/>
+				</div>
+				<div class="size-item">
+					<span class="pop-title">Width</span
+					><span class="sub-size">640</span><br />
+					<input
+						class="range-slider width-slider"
+						max="2000"
+						min="100"
+						type="range"
+						value="640"
+					/>
+				</div>
+				<div class="size-item">
+					<button class="go-btn set-size">
+						Set size and Generate
+					</button>
+				</div>
+			</div>
+		</div>
+	</body>
+	<script src="https://unpkg.com/clipboard@2/dist/clipboard.min.js"></script>
+	<script
+		src="https://code.jquery.com/jquery-3.6.0.min.js"
+		integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+		crossorigin="anonymous"
+	></script>
+	<script src="./js/index.js"></script>
+</html>
