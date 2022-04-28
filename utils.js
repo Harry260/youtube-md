@@ -1,12 +1,16 @@
-import puppeteer from "puppeteer";
+import chromium from "chrome-aws-lambda";
 import http from "http";
 
 const screenShot = async (params, callback) => {
 	var url = params.url;
 	var size = params.size;
 	try {
-		const browser = await puppeteer.launch({
-			args: ["--no-sandbox"],
+		const browser = await chromium.puppeteer.launch({
+			args: chromium.args,
+			defaultViewport: chromium.defaultViewport,
+			executablePath: await chromium.executablePath,
+			headless: chromium.headless,
+			ignoreHTTPSErrors: true,
 		});
 
 		const page = await browser.newPage();
