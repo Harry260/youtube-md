@@ -5,3 +5,64 @@
 </p>
 
 <hr>
+
+<br>
+
+<a href="https://youtube-md.vercel.app/">
+
+| Open Editor |
+| ----------- |
+
+</a>
+
+## Table Of Contents
+
+-   [Example](#example)
+-   [Usage](#usage)
+-   [Support](#support)
+-   [License](#license)
+    <br>
+
+### Example
+
+Embeding Youtube videos to markdown is impossible. But, you can use this tool to embed youtube video "thumbnail" with all elements which look like real embed. Example below:
+
+```md
+[![Rick Astley - Never Gonna Give You Up (Official Music Video)](https://youtube-md.vercel.app/dQw4w9WgXcQ/640/360)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+```
+
+[![Rick Astley - Never Gonna Give You Up (Official Music Video)](https://youtube-md.vercel.app/dQw4w9WgXcQ/640/360)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+
+### Usage
+
+You can either use the web app to generate the code or use the Web Api.
+
+| Open Web Editor |
+| --------------- |
+
+##### API
+
+| `https://youtube-md.vercel.app/<video-id*>/<width>/<height>` |
+| ------------------------------------------------------------ |
+
+`*`: required
+
+| Parameter  | Description                                                      | Type  | optional |
+| ---------- | ---------------------------------------------------------------- | ----- | -------- |
+| `video-id` | Id of the YouTube video you want to add                          | Param | No       |
+| `width`    | Width of the image. Used as `height` if only `width` is provided | Param | Yes      |
+| `height`   | Height of the Image                                              | Param | Yes      |
+| `?height`  | Same as `height`                                                 | Query | Yes      |
+| `?width`   | Same as `width`                                                  | Query | Yes      |
+
+> Note: Default values for width and height are `640` and `360 `respectively.
+
+### Support
+
+Support this project by buying me a coffee and starring ⭐ this repo!
+
+<a href="https://www.buymeacoffee.com/harrytom" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a><br>
+
+### License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
