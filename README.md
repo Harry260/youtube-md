@@ -28,10 +28,10 @@
 Embeding Youtube videos to markdown is impossible. But, you can use this tool to embed youtube video "thumbnail" with all elements which look like real embed. Example below:
 
 ```md
-[![Rick Astley - Never Gonna Give You Up (Official Music Video)](https://youtube-md.vercel.app/dQw4w9WgXcQ/640/360)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[![Me at the zoo](https://youtube-md.vercel.app/jNQXAC9IVRw/640/360)](https://www.youtube.com/watch?v=jNQXAC9IVRw)
 ```
 
-[![Rick Astley - Never Gonna Give You Up (Official Music Video)](https://youtube-md.vercel.app/dQw4w9WgXcQ/640/360)](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+[![Me at the zoo](https://youtube-md.vercel.app/jNQXAC9IVRw/640/360)](https://www.youtube.com/watch?v=jNQXAC9IVRw)
 
 ### Usage
 

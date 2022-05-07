@@ -28,6 +28,7 @@
 		"request": "^2.88.2"
 	},
 	"devDependencies": {
-		"nodemon": "^2.0.15"
+		"nodemon": "^2.0.15",
+		"puppeteer": "^13.7.0"
 	}
 }
