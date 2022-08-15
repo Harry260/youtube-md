@@ -60,11 +60,13 @@ function Generate(videoID) {
 					var clip = new ClipboardJS(".result-txt");
 					clip.on("success", function (e) {
 						alert("Copied to clipboard");
+						window.close();
 					});
 					downloadImage.addClass("go-btn");
 				});
 			} else {
 				alert("Video Not found! Check your video id or URL!");
+				window.close();
 			}
 		});
 	} else {
