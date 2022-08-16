@@ -10,10 +10,16 @@
 
 <a href="https://youtube-md.vercel.app/">
 
-| Open Editor |
-| ----------- |
+| Open Web App |
+| ------------ |
 
 </a>
+<br>
+
+### Changes
+
+1. Fixed [Issue#1](https://github.com/Harry260/youtube-md/issues/1) : _"the alert box that says copied to clipboard remains persistent even on pressing OK."_
+2. Error image will show up if link or id is invalid <br>
 
 ## Table Of Contents
 

@@ -8,6 +8,12 @@ const setSize = $(".set-size");
 const sizeWrap = $(".size-wrap");
 const sizeBtn = $(".size-btn");
 
+var clip = new ClipboardJS(".result-txt");
+
+clip.on("success", function (e) {
+	alert("Copied to clipboard");
+});
+
 var imageSize = {
 	width: 640,
 	height: 360,
@@ -38,8 +44,9 @@ const YouTube = {
 function Generate(videoID) {
 	resultTxt.fadeOut(300);
 	downloadImage.removeClass("go-btn");
-	previewImage.attr("src", `./images/lodaing.gif`);
+
 	if (videoID) {
+		previewImage.attr("src", `./images/lodaing.gif`);
 		inputVideoId.val(videoID);
 		YouTube.checkVideo(videoID, function (data) {
 			if (data) {
@@ -57,19 +64,23 @@ function Generate(videoID) {
 						.text(result)
 						.attr("data-clipboard-text", result)
 						.css({ cursor: "pointer", display: "block" });
-					var clip = new ClipboardJS(".result-txt");
-					clip.on("success", function (e) {
-						alert("Copied to clipboard");
-					});
+
 					downloadImage.addClass("go-btn");
 				});
 			} else {
+				OnErrorFunction();
 				alert("Video Not found! Check your video id or URL!");
 			}
 		});
 	} else {
 		alert("Invalid Video ID or URL!");
+		OnErrorFunction();
 	}
+}
+
+function OnErrorFunction() {
+	resultTxt.hide();
+	previewImage.attr("src", `./images/error.jpg`);
 }
 
 async function getImage(imageSrc, filename = "Download") {
